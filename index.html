@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+    <head>
+    
+        <meta http-equiv="Content-Type" 		content="text/html; charset=utf-8" />
+        
+        <title>Using For loop</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        
+    </head>
+    
+    <body>
+    	
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+    
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+                <hgroup>
+					<h1>In To The Space</h1>
+					<h3>Press The Button To Start</h3>
+					<!-- <h3><a href=""><img src="../images/logo.gif" alt="Logo" width="400" height="50"></a></h3> -->
+				</hgroup>
+                 <div class="line"></div>               
+                <nav id="nav_menu">
+					<ul>
+						<li><a href="index.html" >Home</a></li>
+						<li><a href="#">Start</a></li>
+						<li><a href="#">Stop</a></li>
+					</ul>
+		
+				</nav>
+				<div class="line"></div>
+            </header>
+			<aside id="sidebarA" >
+				<h3>Rocket Ship</h3><br>
+				<p>In To The Space Mission</p>
+				
+			</aside>
+			<main>
+				
+						<img src="images/rocketship.gif" alt="christmas Lights" width="200" height="200">
+						<button onclick="LunchRocket()" id="button">In To Space</button>
+
+						<script>
+							function LunchRocket() {
+								
+								document.write("Countdown to Blast Off!\n");
+								document.write('<pre>');
+								for(i = 10; i > 0; i--)
+								{
+									document.write('<pre>');
+									document.write(i+"......");
+			
+								}
+								document.write('<pre>');
+								document.writeln("Blast Off!");
+								
+    							
+							}
+						</script>
+						
+	
+				
+			</main>
+			<aside id="sidebarA">
+					<p>Watch Out For The Count Down </p>
+					<p>The Mission Will Start After The Count Down</p>
+			</aside>
+
+		</body>	
+	    <footer> <!-- Marking the footer section -->
+
+           <div class="line"></div>
+           
+           <p>&copy; Copyright 2017 - AzzaElgendy</p> <!-- Change the copyright notice -->
+         
+        </footer>
+</html>
